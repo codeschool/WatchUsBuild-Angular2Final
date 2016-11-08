@@ -1,0 +1,136 @@
+h2 {
+  color: #9397d8;
+  font-size: 22px;
+  margin-top: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 30px;
+}
+
+li.racing {
+  background: #24262c;
+}
+
+li:last-child {
+  margin-bottom: 0;
+}
+
+.button {
+  background: #fd79fc;
+  border-radius: 3px;
+  border: 0;
+  color: #ffffff;
+  width: 120px;
+}
+
+.button-cancel {
+  background: none;
+  border: 0;
+  color: #fd79fc;
+  text-decoration: underline;
+  width: 120px;
+}
+
+.card {
+  background: #44464c;
+}
+
+.date, .price {
+  color: #9397d8;
+}
+
+.description {
+  color: #66d9f7;
+}
+
+.panel-body {
+  display: table;
+  padding: 0;
+}
+
+.photo {
+  float: left;
+  margin-right: 30px;
+}
+
+.price {
+  margin: 0;
+  font-size: 18px;
+  text-align: center;
+  width: 120px;
+}
+
+.price-total {
+  background:  #9179b7;
+  float: right;
+  margin: 0px 0;
+  padding: 20px 50px;
+}
+
+.price-total h3, .price-total p {
+  display: inline-block;
+  margin: 0;
+}
+
+.price-total p {
+  color: #362751;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.price-total h3 {
+  font-size: 18px;
+  margin-right: 60px;
+}
+
+.race-info {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.race-info h3 {
+  margin: 0 0;
+}
+
+.race-info td:last-child {
+  padding: 0 20px;
+}
+
+.race-info, .race-info tbody, .race-info tr, .race-info td {
+  width: 100%;
+}
+
+.race-info tbody {
+  display: inline-block;
+}
+
+.status {
+  color: #fd79fc;
+  text-align: center;
+}
+
+.cash {
+  background: #000;
+  border: none;
+  display: inline-block;
+  height: 30px;
+  margin: 0px;
+  width: 150px;
+}
+
+/* ----- State ----- */
+
+.unavailble {
+  background: #505050;
+}
+
+.unavailble .button {
+  background: #707070;
+  color: #aeaeae;
+}

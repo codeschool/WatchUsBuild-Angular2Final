@@ -1,0 +1,36 @@
+<main class="container" role="main">
+<h2>Money for racing: <input type="text" class="cash" [(ngModel)]="cash"></h2>
+<h2>Cash left to enter races: <span>{{cashLeft() | currency:'USD':true}}</span> </h2>
+<ul>
+  <li class="card" *ngFor="let race of races" [class.racing]="race.isRacing" >
+    <div class="panel-body">
+      <div class="photo">
+        <img [src]="race.image" [alt]="race.imageDescription">
+      </div>
+      <table class="race-info">
+        <tr>
+          <td>
+            <h3>{{race.name}}</h3>
+            <p class="date">{{castDate(race.date) | date:'MMM d, y, h:mma'}}</p>
+            <p class="description">{{race.about}}</p>
+          </td>
+          <td>
+            <p class="price">{{race.entryFee | currency:'USD':true}}</p>
+          </td>
+          <td>
+            <button class="button" *ngIf="!race.isRacing" (click)="enterRace(race)">Enter Race</button>
+            <div *ngIf="race.isRacing">
+              <p class="status">Racing</p>
+              <button class="button-cancel" (click)="cancelRace(race)">Cancel Race</button>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </li>
+</ul>
+<div class="price-total">
+  <h3>Total cost:</h3>
+  <p>{{totalCost() | currency:'USD':true}}</p>
+</div>
+</main>
