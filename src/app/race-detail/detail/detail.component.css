@@ -1,0 +1,11 @@
+p {
+  text-align: center;
+}
+
+p.welcome {
+  font-size: 2em;
+}
+
+a {
+  color: white;
+}
