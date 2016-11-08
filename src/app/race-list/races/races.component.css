@@ -1,0 +1,53 @@
+h2 {
+  color: #9397d8;
+  font-size: 22px;
+  margin-top: 0;
+}
+
+.status {
+  color: #fd79fc;
+  text-align: center;
+}
+
+.cash {
+  background: #000;
+  border: none;
+  display: inline-block;
+  height: 30px;
+  margin: 0px;
+  width: 150px;
+}
+
+.price-total {
+  background:  #9179b7;
+  float: right;
+  margin: 0px 0;
+  padding: 20px 50px;
+}
+
+.price-total h3, .price-total p {
+  display: inline-block;
+  margin: 0;
+}
+
+.price-total p {
+  color: #362751;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.price-total h3 {
+  font-size: 18px;
+  margin-right: 60px;
+}
+
+/* ----- State ----- */
+
+.unavailble {
+  background: #505050;
+}
+
+.unavailble .button {
+  background: #707070;
+  color: #aeaeae;
+}
