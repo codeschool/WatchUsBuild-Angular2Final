@@ -1,0 +1,26 @@
+<section class="card" [class.racing]="race.isRacing" >
+  <div class="panel-body">
+    <div class="photo">
+      <img [src]="race.image" [alt]="race.imageDescription">
+    </div>
+    <table class="race-info">
+      <tr>
+        <td>
+          <h3>{{race.name}}</h3>
+          <p class="date">{{castDate(race.date) | date:'MMM d, y, h:mma'}}</p>
+          <p class="description">{{race.about}}</p>
+        </td>
+        <td>
+          <p class="price">{{race.entryFee | currency:'USD':true}}</p>
+        </td>
+        <td>
+          <button class="button" *ngIf="!race.isRacing" (click)="enterRace()">Enter Race</button>
+          <div *ngIf="race.isRacing">
+            <p class="status">Racing</p>
+            <button class="button-cancel" (click)="cancelRace()">Cancel Race</button>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+</section>
