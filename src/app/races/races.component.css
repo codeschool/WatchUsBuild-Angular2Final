@@ -4,23 +4,6 @@ h2 {
   margin-top: 0;
 }
 
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  margin-bottom: 30px;
-}
-
-li.racing {
-  background: #24262c;
-}
-
-li:last-child {
-  margin-bottom: 0;
-}
-
 .button {
   background: #fd79fc;
   border-radius: 3px;
@@ -39,6 +22,16 @@ li:last-child {
 
 .card {
   background: #44464c;
+  margin-bottom: 30px;
+  min-height: 160px;
+}
+
+.card.racing {
+  background: #24262c;
+}
+
+.card:last-child {
+  margin-bottom: 0;
 }
 
 .date, .price {
