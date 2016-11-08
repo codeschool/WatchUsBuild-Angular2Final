@@ -42,5 +42,6 @@
     "tslint": "3.13.0",
     "typescript": "~2.0.3",
     "webdriver-manager": "10.2.5"
-  }
+  },
+  "homepage": "https://codeschool.github.io/WatchUsBuild-Angular2Final/"
 }
