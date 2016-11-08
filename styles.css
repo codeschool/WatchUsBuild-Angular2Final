@@ -1,0 +1,32 @@
+/* This would be bootstrap-custom.css */
+
+/* ----- Custom Theme ----- */
+
+html {
+  height: 100%;
+}
+
+body {
+  background: -webkit-linear-gradient(#0d263c,#030714) no-repeat fixed;
+  background: linear-gradient(#0d263c,#030714) no-repeat fixed;
+  color: #ffffff;
+  height: 100%;
+  margin: 0;
+}
+
+h2 {
+  font-weight: 400;
+  margin-top: 0;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+header h1 {
+  color: #66d9f7;
+}
+
+.container {
+  max-width: 900px;
+}
